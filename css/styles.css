@@ -1,0 +1,349 @@
+/* Reseteo */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Encabezado */
+.encabezado {
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(216, 237, 255, 0.601);
+}
+
+.menu{
+    font-size: 1rem;
+    font-family:"Montserrat", "sans-serif";
+    font-weight: 300;
+    color:lightslategray;
+    margin-right: 3%;
+}
+
+.menu ul {
+    display: flex;
+    gap: 5px;
+}
+
+ul li{
+    list-style: none;
+    padding: 0 5px;
+}
+
+.logo{
+    min-width: 90px;
+    max-width: 220px;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: lightslategray;
+}
+
+a:hover {
+    text-decoration:none;
+    color:deepskyblue;
+    font-weight: 500;
+    text-decoration:underline dotted 3px;
+}
+
+/* Body */
+body {
+    width: 100%;
+}
+
+/* Banner index */
+
+.contenedor-banner {
+    background-image: url(/img/fondohome.jpg);
+    background-attachment: fixed;
+    height: 650px;
+    padding: 2rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contenedor-banner p {
+    width: 40%;
+    text-align: left;
+    margin-top: 1rem;
+    font-weight: 400;
+}
+
+h1{
+    color:rgb(89, 162, 252);
+    font-family: "Quicksand", "sans-serif";
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+/* Sección Itinerario*/
+
+h2 {
+    color:rgb(89, 162, 252);
+    font-family: "Quicksand", "sans-serif";
+    font-weight: 500;
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.itinerario {
+    margin: 5% 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.itinerario img {
+    width: 50%;
+}
+
+p {
+    font-size: 1rem;
+    font-family:"Montserrat", "sans-serif";
+    font-weight: 300;
+    color:lightslategray;
+    line-height: 1.5rem;
+}
+
+/* Sección Hoteles*/
+
+
+.hoteles {
+    background-color: rgba(232, 232, 232, 0.902);
+    border-radius: 5px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: top;
+    gap: 2%;
+    margin: 0% 4%;
+    padding: 2% 5% 2% 5%;
+}
+
+.tarjetahotel {
+    background-color: aliceblue;
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: center;
+    gap: 2%;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.047);
+}
+
+.hoteles h2 {
+    text-align: left;
+    padding-left: 0;
+    padding-bottom: 3%;
+}
+
+h4 {
+    font-size: 0.9rem;
+    font-family:"Montserrat", "sans-serif";
+    font-weight: 400;
+    color:rgb(100, 143, 186);
+    text-align: center;
+    padding-top: 10px;
+}
+
+h4:hover {
+    font-weight: 500;
+    color:rgb(46, 114, 182);
+}
+
+h3 {
+    color:rgb(100, 143, 186);
+    font-family: "Quicksand", "sans-serif";
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.recordatorios {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2%;
+    margin: 0% 4%;
+    padding: 2% 8% 2% 8%;
+}
+
+.recordatorios .viajeros img {
+    width: 400px;
+}
+
+.recordatorios .on img {
+    width: 400px;
+}
+
+.recordatorios h4 {
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+/* Reseñas */
+
+.reseñas {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2%;
+    padding: 5% 8%;
+}
+
+.tarjetareseña {
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: center;
+    gap: 2%;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.047);
+}
+
+.reseñas .fotoperfil {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+h5 {
+    color:rgb(100, 143, 186);
+    font-family: "Quicksand", "sans-serif";
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: left;
+}
+
+h6 {
+    color:rgb(59, 61, 63);
+    font-family: "Quicksand", "sans-serif";
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.reseñas p {
+    padding-top: 10px;
+    font-weight: 400;
+    width: 80%;
+}
+
+.reseñas .imgreseña {
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.reseñas .estrellas {
+    width: 80%;
+}
+
+/* Footer */
+
+footer .footernav {
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2%;
+    padding: 2% 8% 2% 8%;
+}
+
+footer .footernav li {
+    font-family: "Quicksand", "sans-serif";
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: left;
+}
+
+footer .footernav li a{ 
+    color: rgb(212, 255, 255);
+}
+
+footer .footernav li a:hover{ 
+    color: rgb(139, 247, 247);
+}
+
+footer .footernav h3 {
+    color: rgb(89, 162, 252);
+    padding: 0;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+footer .footernav .suscripcion {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2%;
+}
+
+footer .footernav .formsuscri {
+    font-family: "Quicksand", "sans-serif";
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: left;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+footer .footernav .boton {
+    font-family: "Quicksand", "sans-serif";
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: left;
+    color:rgb(212, 255, 255);
+    background-color:rgb(89, 162, 252);
+    padding: 2%;
+    border-radius: 5px;
+}
+
+footer .footernav p {
+    color: rgb(212, 255, 255);
+}
+
+footer .footernav .rrss {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2%;
+}
+
+footer .siteinfo {
+    background-color: rgb(89, 162, 252);
+}
+
+footer .siteinfo p {
+    color:  rgb(51, 51, 51);
+    font-weight: 400;
+    text-align: center;
+    padding: 10px;
+}
+
+footer .siteinfo a {
+    color:  rgb(51, 51, 51);
+    font-weight: 400;
+    font-style: italic;
+    padding: 10px;
+}
+footer .whatsapp {
+    float: inline-end;
+}
