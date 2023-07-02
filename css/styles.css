@@ -3,125 +3,328 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
+    
 }
 
+a:link {
+    text-decoration: none;
+}
 /* Encabezado */
-.encabezado {
-    display: flex;
-    flex-flow:row nowrap;
-    justify-content:space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: rgba(216, 237, 255, 0.601);
+
+.bg-body-tertiary {
+padding-left: 2%;
+padding-right: 2%;
 }
 
-.menu{
-    font-size: 1rem;
-    font-family:"Montserrat", "sans-serif";
-    font-weight: 300;
-    color:lightslategray;
-    margin-right: 3%;
-}
-
-.menu ul {
-    display: flex;
-    gap: 5px;
-}
-
-ul li{
-    list-style: none;
-    padding: 0 5px;
+.navbar .navbar-expand-lg .bg-body-tertiary {
+    justify-content: space-between;
 }
 
 .logo{
-    min-width: 90px;
-    max-width: 220px;
+    min-width: 110px;
+    max-width: 260px;
 }
 
-a:link, a:visited, a:active {
+.navbar-expand-lg .navbar-nav .nav-link 
+{
+    font-size: 1rem;
+    font-family:"Montserrat", "sans-serif";
+    font-weight: 400;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
     text-decoration:none;
-    color: lightslategray;
+    color: rgb(222, 171, 253);
+    font-weight: 400;
+    font-style:oblique;
+    text-decoration:underline dotted 2px;
 }
 
-a:hover {
-    text-decoration:none;
-    color:deepskyblue;
-    font-weight: 500;
-    text-decoration:underline dotted 3px;
+.navbar-toggler {
+    border: solid 1.5px #a1a1a1;
+    padding: 0.3rem;
 }
 
-/* Body */
-body {
+.navbar-toggler:hover {
+    border: none;
+    background-color: rgb(154, 206, 251);
+}
+
+.navbar-toggler-icon {
+    background-image: url("/img/menu.png");
+    max-height: 25px;
+}
+
+.navbar-toggler-icon:hover {
+    filter:brightness(200%)
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 1rem;
+    font-family: "Montserrat", "sans-serif";
+    font-weight: 400;
+    color: rgb(80, 170, 248);
+    margin-right: 3%;
+}
+
+.body {
     width: 100%;
 }
 
-/* Banner index */
-
-.contenedor-banner {
-    background-image: url(/img/fondohome.jpg);
-    background-attachment: fixed;
-    height: 650px;
-    padding: 2rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+/* Banner mobile */
+@media screen and (max-width: 768px) {
+   
+    .contenedor-banner {
+        background-image: url(/img/fondohome.jpg);
+        background-attachment: fixed;
+        height: 350px;
+        padding: 2rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:50% 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+    }
+    .contenedor-banner p {
+        margin-top: 3%;
+        width: 70%;
+        font-size: 1rem;
+        font-family:"Montserrat", "sans-serif";
+        font-weight: 300;
+        color:lightslategray;
+        line-height: 1.5rem;
+        text-align: left;
+        margin-top: 0.5rem;
+    }
+    h1 {
+        color: rgb(89, 162, 252);
+        font-family: "Quicksand", sans-serif;
+        font-weight: 400;
+        font-size: 2.5rem;
+    }
 }
 
-.contenedor-banner p {
-    width: 40%;
-    text-align: left;
-    margin-top: 1rem;
-    font-weight: 400;
+/* Banner tablet */
+@media screen and (min-width: 768px) and (max-width:1024px){
+    .contenedor-banner {
+        background-image: url(/img/fondohome.jpg);
+        background-attachment: fixed;
+        height: 450px;
+        padding: 2rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:50% 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+    }
+    .contenedor-banner p {
+        margin-top: 3%;
+        font-size: 1rem;
+        font-family:"Montserrat", "sans-serif";
+        font-weight: 400;
+        color:lightslategray;
+        line-height: 1.5rem;
+        width: 50%;
+        text-align: left;
+        margin-top: 0.5rem;
+    }
+    h1 {
+        color: rgb(89, 162, 252);
+        font-family: "Quicksand", sans-serif;
+        font-weight: 500;
+        font-size: 3rem;
+    }
 }
 
-h1{
-    color:rgb(89, 162, 252);
-    font-family: "Quicksand", "sans-serif";
-    font-weight: 700;
-    font-size: 3rem;
+/* Banner desktop */
+@media screen and (min-width:1024px) {
+    .contenedor-banner {
+        background-image: url(/img/fondohome.jpg);
+        background-attachment: fixed;
+        height: 650px;
+        padding: 2rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+    }
+    .contenedor-banner p {
+        margin-top: 3%;
+        width: 40%;
+        font-size: 1rem;
+        font-family:"Montserrat", "sans-serif";
+        font-weight: 400;
+        color:lightslategray;
+        line-height: 1.5rem;
+        text-align: left;
+        margin-top: 0.5rem;
+        line-height: 1.6rem;
+    }
+    h1 {
+        color: rgb(89, 162, 252);
+        font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+        font-size: 3rem;
+    }
 }
 
-/* Sección Itinerario*/
+/* Itinerario mobile */
+@media screen and (max-width: 768px) {
+.contenedor-itinerario {
+    width: 100%;
+    margin-bottom: 6%;
+}
+    h2 {
+        color:rgb(89, 162, 252);
+        font-family: "Quicksand", "sans-serif";
+        font-weight: 400;
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 1.5rem;
+        margin-top: 2%;
+    }
+    
+    .itinerario {
+        margin: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+        padding: 1%, 3%, 1%, 3%;
+    }
+    
+    .itinerario img {
+        width: 90%;
+        height: 50%;
+        object-fit:fill;
+        border-radius: 70px;
+    }
+    
+   .itinerario p {
+        font-size: 0.9rem;
+        font-family:"Montserrat", "sans-serif";
+        font-weight: 300;
+        color:lightslategray;
+        line-height: 1.5rem;
+        margin: 3%;
+        text-align: center;
 
-h2 {
-    color:rgb(89, 162, 252);
-    font-family: "Quicksand", "sans-serif";
-    font-weight: 500;
-    font-size: 2.2rem;
-    text-align: center;
-    padding: 1.5rem;
+    }
+}
+/* Itinerario tablet */
+@media screen and (min-width: 768px) and (max-width:1024px){
+.contenedor-itinerario {
+        width: 100%;
+        margin-bottom: 6%;
+    }
+
+    .itinerario {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        column-gap:normal;
+    }
+    
+    h2 {
+        color: rgb(89, 162, 252);
+        font-family: "Quicksand", "sans-serif";
+        font-weight: 500;
+        font-size: 2.2rem;
+        text-align: center;
+        padding: 3%;
+        flex-basis: 50%; 
+        flex-shrink: 0; 
+    }
+    
+    .itinerario img {
+        max-width: 60%;
+        flex-shrink: 1; 
+        padding: 2%;
+        border-radius: 70px;
+    }
+    
+    .itinerario p {
+        font-size: 1rem;
+        font-family: "Montserrat", "sans-serif";
+        font-weight: 300;
+        color: lightslategray;
+        line-height: 1.5rem;
+        flex-basis: 40%; 
+        flex-shrink: 0; 
+        padding: 2%;
+        align-self: center;
+    }
+}
+/* Itinerario desktop */
+@media screen and (min-width:1024px) {
+    .contenedor-itinerario {
+        width: 100%;
+        padding: 2% 5% 2% 5%;
+    }
+
+    .itinerario {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        column-gap:normal;
+    }
+    
+    h2 {
+        color: rgb(89, 162, 252);
+        font-family: "Quicksand", "sans-serif";
+        font-weight: 500;
+        font-size: 2.5rem;
+        text-align: center;
+        flex-basis: 50%; 
+        flex-grow: 2;
+        flex-shrink: 0; 
+    }
+    
+    .itinerario img  {
+        max-width: 50%;
+        flex-shrink: 1; 
+        padding: 2%;
+        border-radius: 70px;
+    }
+    
+    .itinerario p {
+        font-size: 1rem;
+        font-family: "Montserrat", "sans-serif";
+        font-weight: 300;
+        color: lightslategray;
+        line-height: 1.5rem;
+        flex-basis: 40%; 
+        flex-grow: 1;
+        flex-shrink: 0; 
+        padding: 2%;
+        align-self: center;
+    }
+   
+
 }
 
-.itinerario {
-    margin: 5% 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
-}
-
-.itinerario img {
-    width: 50%;
-}
-
-p {
-    font-size: 1rem;
-    font-family:"Montserrat", "sans-serif";
-    font-weight: 300;
-    color:lightslategray;
-    line-height: 1.5rem;
-}
-
-/* Sección Hoteles*/
-
-
-.hoteles {
+/* Sección Hoteles Mobile*/
+@media screen and (max-width: 768px) {
+.contenedor-hoteles {
+    width: 100%;
+    margin: 5%;
+    padding:8%;
     background-color: rgba(232, 232, 232, 0.902);
     border-radius: 5px;
+}
+
+.hoteles .titulo-desc-hoteles {
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -129,22 +332,58 @@ p {
     gap: 2%;
     margin: 0% 4%;
     padding: 2% 5% 2% 5%;
+    overflow: auto;
+}
+
+h3 {
+    color: lightslategray;
+    font-family: "Quicksand", "sans-serif";
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.titulo-desc-hoteles p {
+    font-size: 0.9rem;
+    font-family: "Montserrat", "sans-serif";
+    font-weight: 300;
+    text-align: center;
+    color: lightslategray;
+    line-height: 1.5rem;
+    flex-basis: 40%; 
+    flex-shrink: 0; 
+    padding: 2%;
+    align-self: center;
+}
+
+.tarjetas-hoteles-home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4%;
+    align-items: flex-start;
+    margin-bottom: 8%;
 }
 
 .tarjetahotel {
     background-color: aliceblue;
-    width: 300px;
-    border-radius: 20px;
-    padding: 20px;
+    width: 100%;
+    border-radius: 30px;
+    padding: 10%;
     justify-content: center;
+    align-items: center;
     gap: 2%;
-    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.047);
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.167);
 }
 
-.hoteles h2 {
-    text-align: left;
-    padding-left: 0;
-    padding-bottom: 3%;
+.tarjetahotel:hover {
+    width: 102%;
+    background-color: rgb(217, 233, 247);
+}
+
+.img-hoteles {
+    width: 100%;
+    border-radius: 10%;
 }
 
 h4 {
@@ -160,15 +399,152 @@ h4:hover {
     font-weight: 500;
     color:rgb(46, 114, 182);
 }
+.contenedor-boton {
+display: flex;
+justify-content: center;
+flex-wrap: nowrap;
 
-h3 {
-    color:rgb(100, 143, 186);
+}
+
+.boton {
     font-family: "Quicksand", "sans-serif";
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 1rem;
     text-align: center;
-    padding: 1.5rem;
+    color:rgb(212, 255, 255);
+    background-color:rgb(89, 162, 252);
+    padding: 2% 7%;
+    border: none;
+    border-radius: 5px;
+    margin: 3% 0%;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.167);
 }
+.boton:hover {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color:rgb(255, 255, 255);
+    background-color:rgb(206, 162, 250);
+}
+}
+/* Sección Hoteles Tablet*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .contenedor-hoteles {
+        width: 100%;
+        margin: 5%;
+        padding:8%;
+        background-color: rgba(232, 232, 232, 0.902);
+        border-radius: 5px;
+}
+
+.hoteles .titulo-desc-hoteles {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    gap: 2%;
+    margin: 0% 4%;
+    padding: 2% 5% 2% 5%;
+    overflow: auto;
+}
+
+h3 {
+    color: lightslategray;
+    font-family: "Quicksand", "sans-serif";
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.titulo-desc-hoteles p {
+    font-size: 1.1rem;
+    font-family: "Montserrat", "sans-serif";
+    font-weight: 300;
+    text-align: center;
+    color: lightslategray;
+    line-height: 1.5rem;
+    flex-basis: 40%; 
+    flex-shrink: 0; 
+    padding: 2%;
+    align-self: center;
+}
+
+.tarjetas-hoteles-home {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2%;
+    align-items: space-between;
+    margin-bottom: 5%;
+}
+
+.tarjetahotel {
+    background-color: aliceblue;
+    width: 100%;
+    border-radius: 30px;
+    padding: 10%;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.167);
+}
+
+.tarjetahotel:hover {
+    width: 102%;
+    background-color: rgb(217, 233, 247);
+}
+
+.img-hoteles {
+    width: 100%;
+    border-radius: 10%;
+}
+
+h4 {
+    font-size: 0.9rem;
+    font-family:"Montserrat", "sans-serif";
+    font-weight: 400;
+    color:rgb(100, 143, 186);
+    text-align: center;
+    padding-top: 10px;
+}
+
+h4:hover {
+    font-weight: 500;
+    color:rgb(46, 114, 182);
+}
+.contenedor-boton {
+display: flex;
+justify-content: center;
+flex-wrap: nowrap;
+
+}
+
+.boton {
+    font-family: "Quicksand", "sans-serif";
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    color:rgb(212, 255, 255);
+    background-color:rgb(89, 162, 252);
+    padding: 2% 7%;
+    border: none;
+    border-radius: 5px;
+    margin: 3% 0%;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.167);
+}
+.boton:hover {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color:rgb(255, 255, 255);
+    background-color:rgb(206, 162, 250);
+}
+}   
+
+
+
+
+
+
+
 
 .recordatorios {
     display: flex;
@@ -192,7 +568,7 @@ h3 {
     text-align: left;
     padding-bottom: 1rem;
 }
-
+}
 /* Reseñas */
 
 .reseñas {
