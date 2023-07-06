@@ -12,39 +12,41 @@
 
 <body>
     <header> 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <img src="./img/logowanderlust.png" alt="Logo Wanderlust" class="logo">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="..index.html">Inicio</a>
-                    </li>
-    
-                    <li class="nav-item">
-                        <a class="nav-link" href="./vuelos.html">Explorar</a>
-                    </li>
-    
-                    <li class="nav-item">
-                        <a class="nav-link" href="/pages/vuelos.html">Vuelos</a>
-                    </li>
-    
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/hoteles.html">Hoteles</a>
-                    </li>
-    
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+        <header> 
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <img src="./img/logowanderlust.png" alt="Logo Wanderlust" class="logo">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="./explorar.html">Explorar</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="./vuelos.html">Vuelos</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="./hoteles.html">Hoteles</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
+    
 
 <main>
     <section>
@@ -123,67 +125,65 @@
 </main>
 
 <footer>
-    <div class="footer-menu">
-            <nav>
-                <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li> <a href="/pages/explorar.html">Explorá</a></li>
-                        <li><a href="/pages/vuelos.html">Vuelos </a></li>
-                        <li><a href="/pages/hoteles.html">Hoteles </a></li>
-                        <li><a href="/pages/contacto.html">Contacto </a></li>
+    <div class="footer">
+        <div class="footer__rrss">
+            <h3 class="footer__titulos">¡Seguinos!</h3>
 
+            <ul class="footer__iconos-rrss">
+                <li><a href="https://www.facebook.com" target="blank">
+                    <img src="/img/fb.png" alt="logo facebook">
+                </a></li>
+                <li><a href="https://www.instagram.com" target="blank">
+                    <img src="/img/inst.png" alt="logo instagram">
+                </a></li>
+                <li><a href="https://www.tiktok.com" target="blank">
+                    <img src="/img/tik.png" alt="logo tiktok">
+                </a></li>   
+                <li><a href="https://www.twitter.com" target="blank">
+                    <img src="/img/tw.png" alt="logo twitter">
+                </a></li>
+            </ul>
+
+        </div>
+            
+        <div class="footer__suscriptores">
+            <h3 class="footer__titulos">¡Recibí todas nuestras novedades!</h3>
+            <form action="suscriptores"  class="footer__formsuscripcion">
+                <input type="email" placeholder="Ingresá tu email" class="footer__formsuscripcion__email">
+                <input type="checkbox" class="footer__formsuscripcion__checkbox"><p class="footer__formsuscripcion__acuerdo">Estoy de acuerdo con los <a href=""></a>Términos y Condiciones.</p>
+                <button class="footer__formsuscripcion__boton"> Suscribirme</button>    
+            </form>
+        </div>
+
+        <div class="footer__index"-footer"">
+            <nav>
+                <ul class="footer__index__menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li> <a href="./pages/explorar.html">Explorá</a></li>
+                    <li><a href="./pages/vuelos.html">Vuelos </a></li>
+                    <li><a href="./pages/hoteles.html">Hoteles </a></li>
+                    <li><a href="./pages/contacto.html">Contacto </a></li>            
                 </ul>
             </nav>
+        </div>
 
+        <div>
             <nav>
-                <ul>
-                <li> <a href="">Privacidad</a></li>
-                <li><a href="">Términos </a></li>
-                <li><a href="">Preguntas frecuentes</a></li>
-                <li><a href="">Centro de ayuda</a></li>            
-            </ul>
-        </nav>
-    </div>
+                <ul class="footer__terms">
+                    <li>Privacidad</li>
+                    <li>Términos</li>
+                    <li>Preguntas frecuentes</li>
+                    <li>Centro de ayuda</li>            
+                </ul>
+            </nav>
+        </div>
+    </div>    
 
-    <div>
-            <section>
-            <h2>¡Recibí todas nuestras novedades!</h2>
-    </div>
-
-    <div>
-        <form action="suscriptores">
-            <input type="email" placeholder="Ingresá tu email">
-            <input type="checkbox"><p>Estoy de acuerdo con los <a href=""></a>Términos y Condiciones.</p>
-            <button>Suscribirme</button>
-    </div>
-
-    <div> 
-        <h4>¡Seguinos!</h4>
-        <ul>
-            <li><a href="https://www.facebook.com" target="blank">
-                <img src="/img/fb.png" alt="logo facebook">
-            </a></li>
-            <li><a href="https://www.instagram.com" target="blank">
-                <img src="/img/inst.png" alt="logo instagram">
-            </a></li>
-            <li><a href="https://www.tiktok.com" target="blank">
-                <img src="/img/tik.png" alt="logo tiktok">
-            </a></li>   
-            <li><a href="https://www.twitter.com" target="blank">
-                <img src="/img/tw.png" alt="logo twitter">
-            </a></li>
-        </ul>
-    </div>
-
-    <div>
-        <a href="https://wa.me/5491156580012" target="blank">
-        <img src="/img/wa.png" alt="logo whatsapp">
-    </div>
-
-    <div>
-        <p>Diseñado por <a href="www.agencialol.com.ar"></a>LOL Agencia · Wanderlust® 2023 Todos los derechos reservados</p>
+    <div class="footer__siteinfo">
+        <p>Diseñado por<a href="www.agencialol.com.ar"> LOL Agencia</a> · Wanderlust® 2023 Todos los derechos reservados.</p>
     </div>
 </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
