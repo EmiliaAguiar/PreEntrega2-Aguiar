@@ -78,7 +78,6 @@ padding-right: 2%;
 
 /* Banner mobile */
 @media screen and (max-width: 768px) {
-   
     .banner-princ {
         background-image: url(/img/fondohome.jpg);
         background-attachment: fixed;
@@ -91,6 +90,7 @@ padding-right: 2%;
         flex-flow: column nowrap;
         justify-content: flex-start;
     }
+
     .banner-princ__parrafo {
         margin-top: 3%;
         width: 70%;
@@ -102,6 +102,7 @@ padding-right: 2%;
         text-align: left;
         margin-top: 0.5rem;
     }
+
     .banner-princ__titulo  {
         color: rgb(89, 162, 252);
         font-family: "Quicksand", sans-serif;
@@ -373,7 +374,8 @@ padding-right: 2%;
     align-self: center;
 }
 
-.hoteles__destacados  {  display: grid;
+.hoteles__destacados  {  
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 4%;
@@ -1252,7 +1254,7 @@ padding-right: 2%;
 
 }
 
-/* Sección Reseñas Mobile*/
+/* Sección Footer Mobile*/
 @media screen and (max-width: 768px) {
 
 .footer {
@@ -1378,7 +1380,8 @@ justify-content: center;
     font-family: "Quicksand", "sans-serif";
     font-weight: 500;
     font-size: 0.9rem;
-    text-align: left;
+    text-align: left;  
+    padding: 0%;
 }
 
 .footer__siteinfo {
@@ -1386,20 +1389,20 @@ justify-content: center;
     background-color: rgb(89, 162, 252);
     padding: 2% 6%;
     font-family: "Quicksand";
-    color:  rgb(51, 51, 51);
+    color:  rgb(255, 255, 255);
     font-weight: 600;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 
 .footer__siteinfo a {
-    color:  rgb(51, 51, 51);
+    color:  rgb(255, 255, 255);
     font-weight: 400;
     font-style: italic;
 }
 
 .footer__siteinfo a:hover {
-    color:aliceblue;
+    color:rgb(167, 214, 255);
     font-weight: 400;
     font-style: italic;
 }
@@ -1531,6 +1534,7 @@ justify-content: center;
         font-weight: 500;
         font-size: 0.9rem;
         text-align: left;
+        padding: 0%;
     }
     
     .footer__siteinfo {
@@ -1538,38 +1542,41 @@ justify-content: center;
         background-color: rgb(89, 162, 252);
         padding: 2% 6%;
         font-family: "Quicksand";
-        color:  rgb(51, 51, 51);
+        color:  rgb(255, 255, 255);
         font-weight: 400;
         text-align: center;
-        font-size: 0.8rem;
+        font-size: 1.1rem;
     }
     
     .footer__siteinfo a {
-        color:  rgb(51, 51, 51);
+        color:  rgb(255, 255, 255);
         font-weight: 400;
         font-style: italic;
     }
     
     .footer__siteinfo a:hover {
-        color:aliceblue;
+        color:rgb(193, 226, 255);
         font-weight: 400;
         font-style: italic;
     }
     }
 
-    /* Sección Reseñas Desktop*/
+    /* Sección Footer Desktop*/
 @media screen and (min-width: 1024px) {
 
-    .footer {
-        width: 100%;
+    .footer{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
         background-color: rgb(51, 51, 51);
+        width: 100%;
+        display: grid;
+        grid-template-columns: 20% 50% 15% 15%;
+        grid-template-rows: auto;
+        justify-content: left;
+        align-items: top;
         padding-top: 5%;
         padding-bottom: 5%;
-        display: grid;
-        grid-template-columns: 20% 60% 10% 10%;
-        grid-template-rows: auto;
-        justify-content: space-between;
-        align-items: top;
     }
     
     .footer__titulos {
@@ -1675,6 +1682,7 @@ justify-content: center;
         font-weight: 500;
         font-size: 0.9rem;
         text-align: left;
+        padding: 0%;
     }
     
     .footer__siteinfo {
@@ -1682,21 +1690,839 @@ justify-content: center;
         background-color: rgb(89, 162, 252);
         padding: 2% 6%;
         font-family: "Quicksand";
-        color:  rgb(51, 51, 51);
-        font-weight: 500;
+        color:  rgb(255, 255, 255);
+        font-weight: 600;
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     
     .footer__siteinfo a {
-        color:  rgb(51, 51, 51);
-        font-weight: 400;
+        color:  rgb(255, 255, 255);
+        font-weight: 600;
         font-style: italic;
     }
     
     .footer__siteinfo a:hover {
-        color:aliceblue;
-        font-weight: 400;
+        color:#afdaff;
+        font-weight: 600;
         font-style: italic;
     }
     }
+
+
+
+
+/* Explorar Mobile*/
+@media screen and (max-width: 768px){
+
+/* Explorar Mobile Sección Banner*/
+
+.banner-princ__titulo--pages  {
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 4.7rem;
+    text-align: center;
+    margin-top: 30%;
+}
+
+.banner-princ__parrafo--pages {
+    width: 70%;
+    margin-top: 3%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 0.9rem;
+    font-family:"Montserrat", "sans-serif";
+    font-weight: 400;
+    color:lightslategray;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.banner-princ--explorar {
+    background-image: url(/img/banner-explora.jpg);
+    background-attachment: fixed;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:100% 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    margin-bottom: 5%;
+}
+
+/* Explorar Mobile Sección Buscador*/
+
+.explorar {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-auto-rows: auto;
+    padding:3% 8% 10% 8%;
+    background-color: rgba(232, 232, 232, 0.902);
+    border-radius: 40px;
+    gap: 3%;
+}
+
+.explorar__ciudad {
+    font-size: 0.7rem;
+    padding: 2%;
+    width: 100%;
+    font-family: "Montserrat" sans-serif;
+    border-radius: 10px;
+    border-style: solid 1px grey;
+}
+
+.explorar__fecha {
+    font-size: 0.7rem;
+    padding: 2%;
+    width: 100%;
+    font-family: "Montserrat" sans-serif;
+    border-radius: 10px;
+    border-style: solid 1px grey;
+}
+.explorar__opciones {
+    font-size: 0.7rem;
+    padding: 2%;
+    width: 100%;
+    font-family: "Montserrat" sans-serif;
+    border-radius: 10px;
+    border-style: solid 1px grey;
+    grid-column: span 2;
+}
+
+.hoteles__ubicacion__mapa--explorar {
+    grid-column: span 2;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+/* Explorar Mobile Sección Destacados*/
+
+.lugares {
+    width: 100%;
+    padding:3% 8% 20% 8%;
+    border-radius: 40px;
+}
+
+.lugares__destacados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4%;
+    align-items: flex-start;
+    margin-bottom: 8%;
+}
+
+
+.lugares__encabezado__titulo {
+    color: rgb(89, 162, 252);
+    font-family: "Quicksand", "sans-serif";
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-align: center;
+    flex-basis: 50%; 
+    flex-grow: 2;
+    flex-shrink: 0; 
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.lugares__destacados__tarjetas {
+    background-color: aliceblue;
+    width: 100%;
+    border-radius: 30px;
+    padding: 10%;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.065);
+}
+
+.lugares__destacados__tarjetas:hover {
+    width: 102%;
+    background-color: rgb(217, 233, 247);
+}
+
+.lugares__destacados__imagen {
+    width: 100%;
+    border-radius: 10%;
+}
+
+.lugares__destacados__titulo {
+    font-size: 0.9rem;
+    font-family:"Montserrat", "sans-serif";
+    font-weight: 400;
+    color:rgb(100, 143, 186);
+    text-align: center;
+    padding-top: 10px;
+}
+
+.lugares__destacados__titulo:hover {
+    font-weight: 500;
+    color:rgb(46, 114, 182);
+}
+
+.lugares__destacados__parrafo {
+    font-size: 0.9rem;
+    font-family: "Montserrat", "sans-serif";
+    font-weight: 300;
+    text-align: center;
+    color: lightslategray;
+    line-height: 1.5rem;
+    flex-basis: 40%; 
+    flex-shrink: 0; 
+    padding: 2%;
+    align-self: center;
+}
+
+.lugares__boton {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    font-family: "Quicksand", "sans-serif";
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    color:rgb(233, 255, 255);
+    background-color:rgb(157, 201, 255);
+    padding: 2% 9%;
+    border: none;
+    border-radius: 5px;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.065);
+}
+
+.lugares__boton:hover {
+    font-weight: 600;
+    font-size: 1rem;
+    color:rgb(255, 255, 255);
+    background-color:rgb(206, 162, 250);
+}
+
+/* Sección Registro Mobile*/
+    .registro {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+        margin-top: 10%;
+    }
+    
+    .registro__ilustracion {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .registro__ilustracion img {
+        width: 60%;
+    }
+    
+    .registro__textos {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: 1fr 5fr;  
+        grid-template-rows: 1fr 2fr;  
+        margin-top: 4%;
+        justify-content: left;
+        background-color: #dddddd;
+        padding: 10%;
+        border-radius: 50px;
+    }
+    
+    
+    .registro__textos__titulo {
+        grid-column: span 2;
+        text-align: left;
+        color: lightslategray;
+        font-family: "Quicksand", "sans-serif";
+        font-weight: 500;
+        font-size: 1.2rem;
+    
+    }
+    
+    .registro__textos__parrafo {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 2;;
+        text-align: left;
+        font-size: 0.8rem;
+        font-family: "Montserrat", "sans-serif";
+        font-weight: 400;
+        text-align: left;
+        color: lightslategray;
+        line-height: 1.5rem;
+        flex-basis: 40%; 
+        flex-shrink: 0; 
+    }
+
+    .footer__formsuscripcion__acuerdo--explorar {
+    color: rgb(98, 100, 103);
+    font-family: "Quicksand", "sans-serif";
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-align: left;
+    line-height: 1.2rem;
+    margin-top: 3%;
+    }
+
+    .footer__formsuscripcion__checkbox--explorar {
+        width: 40%;
+    }
+
+}
+
+/* Explorar Tablet*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+.banner-princ__titulo--pages  {
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 4.7rem;
+    text-align: center;
+    margin-top: 20%;
+}
+.banner-princ__parrafo--pages {
+    width: 70%;
+    margin-top: 3%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1rem;
+    font-family:"Montserrat", "sans-serif";
+    font-weight: 300;
+    color:lightslategray;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.banner-princ--explorar {
+    background-image: url(/img/banner-explora.jpg);
+    background-attachment: fixed;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:50% 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    margin-bottom: 5%;
+}
+
+/* Explorar Tablet Sección Buscador*/
+
+.explorar {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-auto-rows: auto;
+    padding:3% 8% 10% 8%;
+    background-color: rgba(232, 232, 232, 0.902);
+    border-radius: 40px;
+    gap: 3%;
+}
+
+.explorar__ciudad {
+    font-size: 0.9rem;
+    padding: 2%;
+    width: 100%;
+    font-family: "Montserrat" sans-serif;
+    border-radius: 10px;
+    border-style: solid 1px grey;
+}
+
+.explorar__fecha {
+    font-size: 0.9rem;
+    padding: 2%;
+    width: 100%;
+    font-family: "Montserrat" sans-serif;
+    border-radius: 10px;
+    border-style: solid 1px grey;
+}
+.explorar__opciones {
+    font-size: 0.9rem;
+    padding: 2%;
+    width: 100%;
+    font-family: "Montserrat" sans-serif;
+    border-radius: 10px;
+    border-style: solid 1px grey;
+    grid-column: span 2;
+}
+
+.hoteles__ubicacion__mapa--explorar {
+    grid-column: span 2;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+/* Explorar Tablet Sección Destacados*/
+
+.lugares {
+    width: 100%;
+    padding:3% 8% 3% 8%;
+    border-radius: 40px;
+}
+
+.lugares__destacados {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4%;
+    align-items: flex-start;
+    margin-bottom: 8%;
+}
+
+
+.lugares__encabezado__titulo {
+    color: rgb(89, 162, 252);
+    font-family: "Quicksand", "sans-serif";
+    font-weight: 500;
+    font-size: 2.2rem;
+    text-align: center;
+    flex-basis: 50%; 
+    flex-grow: 2;
+    flex-shrink: 0; 
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.lugares__destacados__tarjetas {
+    background-color: aliceblue;
+    width: 100%;
+    border-radius: 30px;
+    padding: 10%;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.065);
+}
+
+.lugares__destacados__tarjetas:hover {
+    width: 102%;
+    background-color: rgb(217, 233, 247);
+}
+
+.lugares__destacados__imagen {
+    width: 100%;
+    border-radius: 10%;
+}
+
+.lugares__destacados__titulo {
+    font-size: 0.9rem;
+    font-family:"Montserrat", "sans-serif";
+    font-weight: 400;
+    color:rgb(100, 143, 186);
+    text-align: center;
+    padding-top: 10px;
+}
+
+.lugares__destacados__titulo:hover {
+    font-weight: 500;
+    color:rgb(46, 114, 182);
+}
+
+.lugares__destacados__parrafo {
+    font-size: 0.9rem;
+    font-family: "Montserrat", "sans-serif";
+    font-weight: 300;
+    text-align: center;
+    color: lightslategray;
+    line-height: 1.5rem;
+    flex-basis: 40%; 
+    flex-shrink: 0; 
+    padding: 2%;
+    align-self: center;
+}
+
+.lugares__boton {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    font-family: "Quicksand", "sans-serif";
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-align: center;
+    color:rgb(233, 255, 255);
+    background-color:rgb(157, 201, 255);
+    padding: 1%;
+    border: none;
+    border-radius: 5px;
+    width:30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.065);
+}
+
+.lugares__boton:hover {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color:rgb(255, 255, 255);
+    background-color:rgb(206, 162, 250);
+}
+
+/* Sección Registro Tablet*/
+.registro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    margin-top: 10%;
+}
+
+.registro__ilustracion {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.registro__ilustracion img {
+    width: 70%;
+}
+
+.registro__textos {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;  
+    grid-template-rows: 1fr 2fr;  
+    margin-top: 4%;
+    justify-content: left;
+    background-color: #dddddd;
+    padding: 10%;
+    border-radius: 50px;
+}
+
+
+.registro__textos__titulo {
+    grid-column: span 2;
+    text-align: left;
+    color: lightslategray;
+    font-family: "Quicksand", "sans-serif";
+    font-weight: 500;
+    font-size: 1.2rem;
+
+}
+
+.registro__textos__parrafo {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 2;;
+    text-align: left;
+    font-size: 0.8rem;
+    font-family: "Montserrat", "sans-serif";
+    font-weight: 400;
+    text-align: left;
+    color: lightslategray;
+    line-height: 1.5rem;
+    flex-basis: 40%; 
+    flex-shrink: 0; 
+}
+
+.footer__formsuscripcion__acuerdo--explorar {
+color: rgb(98, 100, 103);
+font-family: "Quicksand", "sans-serif";
+font-weight: 500;
+font-size: 0.8rem;
+text-align: left;
+line-height: 1.2rem;
+margin-top: 3%;
+}
+
+.footer__formsuscripcion__checkbox--explorar {
+    width: 40%;
+}
+
+
+}
+
+/* Explorar Desktop*/
+@media screen and (min-width:1024px) {
+.banner-princ__titulo--pages  {
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 4.7rem;
+    text-align: center;
+    margin-top: 10%;
+}
+.banner-princ__parrafo--pages {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1rem;
+    font-family:"Montserrat", "sans-serif";
+    font-weight: 300;
+    color:lightslategray;
+    line-height: 1.5rem;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.banner-princ--explorar {
+    background-image: url(/img/banner-explora.jpg);
+    background-attachment: fixed;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:50% 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    margin-bottom: 2%;
+}
+
+
+/* Explorar Desktop Sección Buscador*/
+
+.explorar {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-auto-rows: auto;
+    padding:3% 8% 10% 8%;
+    background-color: rgba(232, 232, 232, 0.902);
+    border-radius: 40px;
+    gap: 3%;
+}
+
+.explorar__ciudad {
+    font-size: 0.9rem;
+    padding: 2%;
+    width: 100%;
+    font-family: "Montserrat" sans-serif;
+    border-radius: 10px;
+    border-style: solid 1px grey;
+}
+
+.explorar__fecha {
+    font-size: 0.9rem;
+    padding: 2%;
+    width: 100%;
+    font-family: "Montserrat" sans-serif;
+    border-radius: 10px;
+    border-style: solid 1px grey;
+}
+.explorar__opciones {
+    font-size: 0.9rem;
+    padding: 2%;
+    width: 100%;
+    font-family: "Montserrat" sans-serif;
+    border-radius: 10px;
+    border-style: solid 1px grey;
+    grid-column: span 2;
+}
+
+.hoteles__ubicacion__mapa--explorar {
+    grid-column: span 2;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+/* Explorar Desktop Sección Destacados*/
+
+.lugares {
+    width: 80%;
+    margin-left:auto;
+    margin-right: auto;
+    padding:3% 8% 3% 8%;
+    border-radius: 40px;
+}
+
+.lugares__destacados {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4%;
+    align-items: flex-start;
+    margin-bottom: 8%;
+}
+
+
+.lugares__encabezado__titulo {
+    color: rgb(89, 162, 252);
+    font-family: "Quicksand", "sans-serif";
+    font-weight: 500;
+    font-size: 2.2rem;
+    text-align: center;
+    flex-basis: 50%; 
+    flex-grow: 2;
+    flex-shrink: 0; 
+    margin-top: 5%;
+
+}
+
+.lugares__destacados__tarjetas {
+    background-color: aliceblue;
+    width: 100%;
+    border-radius: 30px;
+    padding: 10%;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.065);
+}
+
+.lugares__destacados__tarjetas:hover {
+    width: 102%;
+    background-color: rgb(217, 233, 247);
+}
+
+.lugares__destacados__imagen {
+    width: 100%;
+    border-radius: 10%;
+}
+
+.lugares__destacados__titulo {
+    font-size: 0.9rem;
+    font-family:"Montserrat", "sans-serif";
+    font-weight: 400;
+    color:rgb(100, 143, 186);
+    text-align: center;
+    padding-top: 10px;
+}
+
+.lugares__destacados__titulo:hover {
+    font-weight: 500;
+    color:rgb(46, 114, 182);
+}
+
+.lugares__destacados__parrafo {
+    font-size: 0.9rem;
+    font-family: "Montserrat", "sans-serif";
+    font-weight: 300;
+    text-align: center;
+    color: lightslategray;
+    line-height: 1.5rem;
+    flex-basis: 40%; 
+    flex-shrink: 0; 
+    padding: 2%;
+    align-self: center;
+}
+
+.lugares__boton {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    font-family: "Quicksand", "sans-serif";
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-align: center;
+    color:rgb(233, 255, 255);
+    background-color:rgb(157, 201, 255);
+    padding: 1%;
+    border: none;
+    border-radius: 5px;
+    width:30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.065);
+}
+
+.lugares__boton:hover {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color:rgb(255, 255, 255);
+    background-color:rgb(206, 162, 250);
+}
+
+/* Sección Registro Desktop*/
+.registro {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+    margin-top: 10%;
+}
+
+.registro__ilustracion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.registro__ilustracion img {
+    width: 90%;
+}
+
+.registro__textos {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;  
+    grid-template-rows: 1fr 2fr;  
+    margin-top: 4%;
+    justify-content: left;
+    background-color: #dddddd;
+    padding: 10%;
+    border-radius: 50px;
+}
+
+
+.registro__textos__titulo {
+    grid-column: span 2;
+    text-align: left;
+    color: lightslategray;
+    font-family: "Quicksand", "sans-serif";
+    font-weight: 500;
+    font-size: 1.2rem;
+
+}
+
+.registro__textos__parrafo {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 2;;
+    text-align: left;
+    font-size: 0.8rem;
+    font-family: "Montserrat", "sans-serif";
+    font-weight: 400;
+    text-align: left;
+    color: lightslategray;
+    line-height: 1.5rem;
+    flex-basis: 40%; 
+    flex-shrink: 0; 
+}
+
+.footer__formsuscripcion__acuerdo--explorar {
+color: rgb(98, 100, 103);
+font-family: "Quicksand", "sans-serif";
+font-weight: 500;
+font-size: 0.8rem;
+text-align: left;
+line-height: 1.2rem;
+margin-top: 3%;
+}
+
+.footer__formsuscripcion__checkbox--explorar {
+    width: 40%;
+}
+
+
+
+}
